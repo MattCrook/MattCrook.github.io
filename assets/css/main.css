@@ -798,7 +798,7 @@ ol li {
 ul {
   list-style: disc;
   margin: 0 0 2rem 0;
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
 }
 ul li {
   padding-left: 0.325rem;
@@ -925,13 +925,14 @@ table.alt tbody tr td {
 
 /* Highlights */
 
-#spotlight_card {
+/* .spotlight_card {
   width: 600px;
   margin-left: 25px;
-}
-.highlights {
+} */
+/* .highlights {
   width: 100%;
   margin: 2.5rem 0;
+  margin-left: 1rem;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -944,6 +945,16 @@ table.alt tbody tr td {
   -webkit-align-items: -webkit-stretch;
   -ms-align-items: -ms-stretch;
   align-items: stretch;
+} */
+
+.highlights {
+  width: 100%;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-evenly;
+
 }
 .highlights > * {
   -moz-flex-shrink: 1;
@@ -956,12 +967,14 @@ table.alt tbody tr td {
   flex-grow: 0;
 }
 .highlights > * {
-  width: 33.3333333333%;
+  /* width: 33.3333333333%; */
+  width: 29%;
+
 }
-.highlights > * {
+/* .highlights > * {
   padding: 1.5rem;
   width: calc(33.3333333333% + 1rem);
-}
+} */
 .highlights > :nth-child(-n + 3) {
   padding-top: 0;
 }
@@ -976,7 +989,8 @@ table.alt tbody tr td {
 }
 .highlights > :nth-child(3n + 1),
 .highlights > :nth-child(3n) {
-  width: calc(33.3333333333% + -0.5rem);
+  width: 29%;
+  /* width: calc(33.3333333333% + -0.5rem); */
 }
 .highlights .content {
   border-radius: 4px;
@@ -995,8 +1009,9 @@ table.alt tbody tr td {
     width: 50%;
   }
   .highlights > * {
-    padding: 1rem;
-    width: calc(33.3333333333% + 0.6666666667rem);
+    /* padding: 1rem; */
+    width: 29%;
+    /* width: calc(33.3333333333% + 0.6666666667rem); */
   }
   .highlights > :nth-child(-n + 3) {
     padding-top: 1rem;
@@ -3898,8 +3913,8 @@ body.is-menu-visible #menu {
 }
 
 .portfolio-pic {
-  width: 100%;
-  height: 110%;
+  width: 92%;
+  /* height: 110%; */
 }
 
 .portfolio-pic-folo {
@@ -3958,4 +3973,26 @@ img#blog_image {
   margin-left: 3px;
   margin-right: 3px;
   margin-bottom: 2rem;
+}
+
+#eks {
+  width: 85%;
+}
+
+.decrypt_label {
+  padding-bottom: 1rem;
+}
+
+.decrypt_ul {
+  text-align: left;
+  margin-left: 11%;
+}
+
+.technology_h3 {
+  margin-bottom: 0;
+}
+
+#self_pic {
+  object-fit: cover;
+  height: 39%;
 }

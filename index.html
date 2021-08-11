@@ -17,21 +17,15 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.ico">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
 		integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-
-
-
 </head>
 
 <body class="is-preload">
-
 	<!-- Header -->
 	<header id="header">
 		<a class="logo" href="index.html">Home</a>
 		<a class="logo" href="aboutMe.html">About</a>
 		<a class="logo" href="blog.html">Blog</a>
 		<a class="logo" href="#contact-anchor">Contact</a>
-
-
 	</header>
 
 	<!-- Nav -->
@@ -47,7 +41,7 @@
 	<section id="banner">
 		<div class="inner">
 			<h1>Matt Crook</h1>
-			<p>Software Engineer, Site Reliability Engineer, Cloud Infrastructure<br />
+			<p>Software Engineer, Site Reliability Engineer, DevOps Engineer - Cloud Infrastructure<br />
 			</p>
 		</div>
 		<video autoplay loop muted playsinline src="./images/invictus-wallpaper.jpg"></video>
@@ -66,16 +60,20 @@
 			<p>I am incredibly passionate about what I do, as I get to solve problems every day! During my time in the
 				Music Business, I had the pleasure of
 				working on a nationally recognized team for innovation and being on the cutting edge of technology in
-				the Music Business.
-				After the decision to sharpen my skills and attend Nashville Software School, I worked on small open
-				source projects, picked up contract work, and then secured a position as a Full Stack Software Engineer
-				at a startup in Nashville called <a href="https://www.rootnote.co/">RootNote</a>. This was a true full
+				the Music Business at <a href="https://www.bmg.com/us/">BMG</a>. After the decision to sharpen my skills and attend Nashville Software School, I picked up contract work, and secured a position as a Full Stack Software Engineer
+				at a startup in Nashville, TN called <a href="https://www.rootnote.co/">RootNote</a>. This was a true full
 				stack role, where I was responsible for architecting and building features, as well as testing, from the
 				planning phase, to back end, to front end, and integrating all with our CI/CD pipeline and deployment
-				infrastructure. My interest in Cloud, Infrastructure, and DevOps, as well as expertise in entire development lifecycle and pipeline led me to my
-				role which I currently hold, as a Site Reliability Engineer/ Automation Engineer at <a
-					href="https://getbuilt.com/?utm_term=built%20technologies&utm_campaign=Company&utm_source=adwords&utm_medium=ppc&hsa_acc=8929400305&hsa_cam=672683233&hsa_grp=34428080295&hsa_ad=216387600416&hsa_src=g&hsa_tgt=kwd-263662130765&hsa_kw=built%20technologies&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjw28T8BRDbARIsAEOMBczQhIWD35YLeXvvljUlI2w_2M1Mv-46saDYETfYYG2Df-nG1fzMo-8aAokzEALw_wcB">Built
-					Technologies</a>.
+				infrastructure.
+			<p>I have had an interest and passion for Cloud, Infrastructure, SRE, and DevOps from the start
+			of my programming career, and that coupled with a growing expertise in entire development lifecycle and pipeline led me to stepping into a role as a Site Reliability Engineer at <a
+				href="https://getbuilt.com/?utm_term=built%20technologies&utm_campaign=Company&utm_source=adwords&utm_medium=ppc&hsa_acc=8929400305&hsa_cam=672683233&hsa_grp=34428080295&hsa_ad=216387600416&hsa_src=g&hsa_tgt=kwd-263662130765&hsa_kw=built%20technologies&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjw28T8BRDbARIsAEOMBczQhIWD35YLeXvvljUlI2w_2M1Mv-46saDYETfYYG2Df-nG1fzMo-8aAokzEALw_wcB">Built
+				Technologies</a>. In this role, I was able to lead a small team that would implement SRE principals and metrics, who's focus would be on system availability and reliability in production, as well as quality gate checks and standards, as deliverables moved through different environments.
+			</p>
+			<p>Currently, I am a DevOps Engineer on the systems and cloud infrastructure team at <a href="https://www.shipt.com/">Shipt</a>, where I utilize my application development
+				 and full-stack engineering experience to facilitate and create tooling for developer velocity, as well as my infrastructure and previous SRE experience to create and 
+				 manage immutable infrastructure through the DevOps set of guiding principals, standards, and workflows.
+			</p>
 			<p>Personality wise, I am a lifelong learner and will always consider myself "junior" as there is always
 				something new
 				to learn, something to improve, and goals to be met. I am self-motivated, productive, accomplished
@@ -89,18 +87,18 @@
 
 	<!-- Highlights -->
 	<section id="wrapper_spotlights" class="wrapper">
-		<div class="inner">
+		<!-- <div class="inner_spotlight"> -->
 			<header class="special">
 				<h2>Portfolio</h2>
 				<!-- <p></p> -->
 			</header>
 			<div class="highlights">
-				<section id="spotlight_card">
+				<section class="spotlight_card">
 					<div class="content">
 						<header>
 							<img src="./images/Quantum.png" class="portfolio-pic" alt="">
 
-							<h3>Quantum Coasters</h3>
+						<h3>Quantum Coasters</h3>
 						</header>
 						<p>As a roller coaster enthusiast, this project exemplifies my <strong>fullstack</strong> skills as a engineer. My goal
 							was to build a platform and one-stop shop for roller
@@ -128,163 +126,156 @@
 						</p>
 					</div>
 				</section>
-
-
-				<!-- <section id="spotlight_card">
+				<section class="spotlight_card">
 					<div class="content">
 						<header>
-							<img src="./images/QuantumManagement.png" class="portfolio-pic" alt="">
-
-							<h3>Quantum Management</h3>
+							<img src="./images/GKE.jpg" class="portfolio-pic" alt="">
+							<h3>Google Kubernetes Engine Infrastructure</h3>
 						</header>
-						<p>Sticking with the roller coaster and amusement park theme, <a
-								href="https://github.com/MattCrook/quantum-management">Quantum Management</a> is a
-							<strong>full-stack</strong> mostly server-side rendered
-							application that is built using Python/ Django, and also includes a Django REST API using
-							Django Rest Framework for various client side rendering cases where an endpoint needed to be
-							exposed. Quantum Management is a theme park
-							management and business analysis management application, who's purpose is to track employees
-							at the park, where they work, allow for addition, removal, or transition to a different
-							role. In addition, Quantum Management provides a dashboard of analytical business
-							intelligence information for educated business
-							decisions, reporting, forecasting, and much more customizable queries to derive financial
-							and
-							income tracking data. All of which are displayed using data visualization tools for easy
-							readability and analysis. For a more detailed ReadMe, click the Github link below!
+						<p>This project encompasses many different GCP components, including provisioning a fully customized GKE cluster with Terraform, along with any other resources that might be needed, 
+							including a VPC, subnets, NAT Gateway, Firewalls, IAM roles and permissions, CloudSQL instances, as well as many other GCP resources, including Compute resources.
 						</p>
-						<a href="https://github.com/MattCrook/quantum-management"><i class="fab fa-github"></i></a>
-					</div>
-				</section> -->
-
-				<section id="spotlight_card">
-					<div class="content">
-						<header>
-							<img src="./images/AWS-Docker.png" class="portfolio-pic" alt="">
-
-							<h3>EC2 Running Containerized Application</h3>
-						</header>
-						<p>This project creates an EC2 instance in AWS running a basic web application in Docker using a single command from the user. Before the script is run, there is no EC2 instances running and afterward the script should output the address of your working web application. The single command from the user can (and likely will) call a longer shell script, or other configuration management code. Part of the challenge is to have restricted access, so you can not use to EKS, ECS, S3, ELB, ASG, or Route53.
-							For a more detailed ReadMe, click the Github link below!
+						<p>Along with provisioning the infrastructure with Terraform using the Terraform modules, this project also houses the Kubernetes manifests to deploy any application to the provisioned infrastructure. 
+							This can be done either using the Kubernetes manifests themselves, or with Helm. 
 						</p>
-						<a href="https://github.com/MattCrook/ec2-running-docker-container"><i class="fab fa-github"></i></a>
+						<p>For demo purposes, there are also various simple applications to use, to deploy to the GKE cluster. These applications include a <a href="https://github.com/MattCrook/gke-cluster/tree/master/app/django">Django</a> app, a <a href="https://github.com/MattCrook/gke-cluster/tree/master/app/flask">Flask</a> app and API, an <a href="https://github.com/MattCrook/gke-cluster/tree/master/app/node">Express</a> app, and a <a href="https://github.com/MattCrook/gke-cluster/tree/master/app/go">Go</a> app and API.
+						</p>
+						<p>To view project repository, and for project setup and instructions, please follow the link below.</p>
+						<a href="https://github.com/MattCrook/gke-cluster"><i class="fab fa-github"></i></a>
 					</div>
 				</section>
-			</div>
-		</div>
-	</section>
 
-	<section id="wrapper_spotlights_middle" class="wrapper">
-		<div class="inner">
-			<div class="highlights">
-
-				<section id="spotlight_card">
+				<section class="spotlight_card">
 					<div class="content">
 						<header>
-							<img src="./images/Kubernetes.png" class="portfolio-pic">
-							<h3>Kubernetes Examples</h3>
+							<img src="./images/EKS-2.png" class="portfolio-pic" id="eks">
+							<h3>AWS Elastic Kubernetes Cluster</h3>
 						</header>
-						<p>Collection of example Kubernetes config files for various resources, services, and components. Many of which, have deployable example apps which can be viewed in the browser by following the instructions on the ReadMe.
+						<p>This project provides the necessary infrastructure and resources in AWS to provision an EKS cluster with corresponding networking and IAM roles and permissions.
 						</p>
+						<p>Along with an EKS cluster, this project also houses modules to provision other AWS resources such as RDS instances, 
+							in-memory store with Elasticache, customized networking with VPC and corresponding Public and Private Subnets, 
+							Route Tables, Internet Gateway, NAT Gateway, ElasticIP, and relevant associations, 
+							as well as cloud object storage using S3 buckets, and DynamoDB for NoSQL object storage, 
+							for example for Terraform state locking.</p>
+						<p>Along with the provisioned infrastructure, this project also houses Kubernetes manifests to deploy applications to the cluster. Examples of both the <a href="https://github.com/MattCrook/eks-cluster/tree/master/eks/live/dev/services/app/Kubernetes">Kubernetes</a> manifests themselves, and using <a href="https://github.com/MattCrook/eks-cluster/tree/master/eks/live/dev/services/app/charts/eks-cluster-dev">Helm</a> can be used.</p>
+						<p>This project also houses a small demo Node.js/ Express application for demo purposes. This can be used to build a Docker image and to deployed to a Kubernetes cluster.</p>
 						<a href="https://github.com/MattCrook/kubernetes_examples"><i
 								class="fab fa-github"></i></a>
 					</div>
-		</section>
-
-	<!-- <section id="wrapper_spotlights_middle" class="wrapper">
-		<div class="inner">
-			<div class="highlights">
-
-				<section id="spotlight_card">
-					<div class="content">
-						<header>
-							<img src="./images/IrisStation.png" class="portfolio-pic">
-							<h3>Iris Station - Eccommerce Application</h3>
-						</header>
-						<p>Iris Station is a full stack eccommerce application utilizing a Django Rest API backend, and
-							React
-							frontend. It provides all of the functionality you would see and expect in an online
-							shopping site such as Amazon. In addition, the application has 100% test coverage using
-							<a href="https://pypi.org/project/pytest/">pytest</a>. To see the React front end repo and a
-							more detailed description on Github, click <a
-								href="https://github.com/nss-day-cohort-38/bangazon-ecommerce-web-app-iris-station">here</a>.
-							To view the back end Django API click <a
-								href="https://github.com/nss-day-cohort-38/bangazon-ecommerce-api-iris-station">here</a>.
-							This application was a group effort, and includes a multitude of features, too many to
-							list! See the Github repo for full list of all features, as well as the tech stack used.
-						</p>
-						<a href="https://github.com/nss-day-cohort-38/bangazon-ecommerce-web-app-iris-station"><i
-								class="fab fa-github"></i></a>
-					</div>
-				</section> -->
-
-				<section id="spotlight_card">
-					<div class="content">
-						<header>
-							<img src="./images/Terraform-main.jpg" class="portfolio-pic">
-							<h3>Terraform - Examples and Projects</h3>
-						</header>
-						<p>This repository consists of a collection of Terraform examples and projects provisioning different types and resources of infrastructure. The projects utilize both GCP, and AWS as cloud providers, and consist of both unique projects and examples, as well as the same projects, but transposed between the two different providers.
-						</p>
-						<a href="https://github.com/MattCrook/terraform_examples"><i
-								class="fab fa-github"></i></a>
-					</div>
 				</section>
-
 			</div>
 		</div>
 	</section>
 
-	<section id="wrapper_spotlights_last" class="wrapper">
-		<div class="inner">
-			<div class="highlights">
 
-				<section id="spotlight_card">
-					<div class="content">
-						<header>
-							<img src="./images/SubnettingInCidr.png" class="portfolio-pic">
-							<h3>Finding Given IP Address in Subnetwork</h3>
+
+	<section id="wrapper_spotlights" class="wrapper">
+		<div class="highlights">
+			<section class="spotlight_card">
+				<div class="content">
+					<header>
+						<img src="./images/AWS-Docker.png" class="portfolio-pic" alt="">
+							<h3>EC2 Running Containerized Application</h3>
 						</header>
-						<p> For a description of CIDR notation, and how to find the upper and lower IP range from a
-							given CIDR, see <a
-								href="https://github.com/MattCrook/CIDR-python-script/blob/main/docs/CIDR.md">Subnetting
-								in CIDR Notation</a>. This script can be run as a <strong>Command Line</strong> program,
-							in which the program can find the subnet mask of a given IP address that is entered
-							to the command line prompt. Or, can also be used the inverse, of having a subnet mask (CIDR)
-							and returning the range of IP addresses available to that CIDR. However, it's main goal is
-							to return True or False if the given IP that is input is within the range of a given
-							subnetwork, retrieved from a list of <a
-								href="https://stat.ripe.net/data/country-resource-list/data.json?resource=US&v4_format=prefix">official
-								subnetworks</a>. Then, if desired, return the upper and lower ends of the range (Network
-							ID and Broadcast ID).</p>
-						<p>For more in depth description of the functions used in the logic, and the functionality
-							behind them, see <a
-								href="https://github.com/MattCrook/CIDR-python-script/blob/main/docs/Functions.md">here</a>.
-						</p>
-						<a href="https://github.com/MattCrook/CIDR-python-script"><i class="fab fa-github"></i></a>
+					<p>This project creates an EC2 instance in AWS running a basic web application in Docker using a single command from the user. Before the script is run, there is no EC2 instances running and afterward the script should output the address of your working web application. The single command from the user can (and likely will) call a longer shell script, or other configuration management code. Part of the challenge is to have restricted access, so you can not use to EKS, ECS, S3, ELB, ASG, or Route53.
+						For a more detailed ReadMe, click the Github link below!
+					</p>
+					<a href="https://github.com/MattCrook/ec2-running-docker-container"><i class="fab fa-github"></i></a>
 					</div>
-				</section>
-
-				<section id="spotlight_card">
-					<div class="content">
-						<header>
-							<img src="./images/python_sockets.png" class="portfolio-pic-folo">
-							<h3>Python Sockets and Multi Threading</h3>
-						</header>
-						<p>This is a personal project and fun experiment that was inspired by a YouTube video I
-							watched on multi-threading in Python. I decided to take the idea and run with it, creating
-							this small command line project. This program will allow anyone running it to chat with
-							other users on the same local IP address, also running the program on the command line. It
-							will also show how many connections (i.e other people using the program) there are.
-						</p>
-						<a href="https://github.com/MattCrook/python_sockets_multi_threading"><i
-								class="fab fa-github"></i></a>
-
-					</div>
-				</section>
-
-			</div>
+			</section>
+			<section class="spotlight_card">
+				<div class="content">
+					<header>
+						<img src="./images/Kubernetes.png" class="portfolio-pic">
+						<h3>Kubernetes Examples</h3>
+					</header>
+					<p>Collection of example Kubernetes config files for various resources, services, and components. 
+						Many of which, have deployable example apps which can be viewed in the browser by following the instructions on the ReadMe.
+					</p>
+					<a href="https://github.com/MattCrook/kubernetes_examples"><i
+							class="fab fa-github"></i></a>
+				</div>
+			</section>
+			<section id="spotlight_card">
+				<div class="content">
+					<header>
+						<img src="./images/Terraform-main.jpg" class="portfolio-pic">
+						<h3>Terraform - Examples and Projects</h3>
+					</header>
+					<p>This repository consists of a collection of Terraform examples and projects provisioning different types and resources of infrastructure. 
+						The projects utilize both GCP, and AWS as cloud providers, and consist of both unique projects and examples, 
+						as well as the same projects, but transposed between the two different providers.
+					</p>
+					<a href="https://github.com/MattCrook/terraform_examples"><i class="fab fa-github"></i></a>
+				</div>
+			</section>
 		</div>
 	</section>
+
+	<section id="wrapper_spotlights" class="wrapper">
+		<div class="highlights">
+			<section id="spotlight_card">
+				<div class="content">
+					<header>
+						<img src="./images/ip-spoofing-t.jpg" class="portfolio-pic">
+						<h3>Finding Given IP Address in Subnetwork</h3>
+					</header>
+					<p> For a description of CIDR notation, and how to find the upper and lower IP range from a
+						given CIDR, see <a
+							href="https://github.com/MattCrook/CIDR-python-script/blob/main/docs/CIDR.md">Subnetting
+							in CIDR Notation</a>. This script can be run as a <strong>Command Line</strong> program,
+						in which the program can find the subnet mask of a given IP address that is entered
+						to the command line prompt. Or, can also be used the inverse, of having a subnet mask (CIDR)
+						and returning the range of IP addresses available to that CIDR. However, it's main goal is
+						to return True or False if the given IP that is input is within the range of a given
+						subnetwork, retrieved from a list of <a
+							href="https://stat.ripe.net/data/country-resource-list/data.json?resource=US&v4_format=prefix">official
+							subnetworks</a>. Then, if desired, return the upper and lower ends of the range (Network
+						ID and Broadcast ID).</p>
+					<p>For more in depth description of the functions used in the logic, and the functionality
+						behind them, see <a
+							href="https://github.com/MattCrook/CIDR-python-script/blob/main/docs/Functions.md">here</a>.
+					</p>
+					<a href="https://github.com/MattCrook/CIDR-python-script"><i class="fab fa-github"></i></a>
+				</div>
+			</section>
+			<section id="spotlight_card">
+				<div class="content">
+					<header>
+						<img src="./images/cryptography-blog-img.png" class="portfolio-pic">
+						<h3>Python Sockets and Multi Threading</h3>
+					</header>
+					<p>This is a personal project and fun experiment that was inspired by a YouTube video I
+						watched on multi-threading in Python. I decided to take the idea and run with it, creating
+						this small command line project. This program will allow anyone running it to chat with
+						other users on the same local IP address, also running the program on the command line. It
+						will also show how many connections (i.e other people using the program) there are.
+					</p>
+					<a href="https://github.com/MattCrook/python_sockets_multi_threading"><i class="fab fa-github"></i></a>
+				</div>
+			</section>
+			<section id="spotlight_card">
+				<div class="content">
+					<header>
+						<img src="./images/free-encryption.jpg" class="portfolio-pic">
+						<h3>Encryption and Decryption</h3>
+					</header>
+					<p>Repository includes examples of CLI programs implementing encryption-decryption procedures of messages using a client-server architecture.
+					</p>
+					<p>The CLI programs can be run in the terminal, and demonstrates encrypted messages being sent between a client and a server, and vice versa. This can also be run on different hosts on the same LAN (Local Area Network), simulating sending encrypted instant messages.</p>
+					<div class="decrypt_label">The algorithms used are:
+					</div>
+						<ul class="decrypt_ul">
+						<li>DES (Data Encryption Standard): It is a symmetric key algorithm which one can crack with brute force in 2^56 iterations.</li>
+						<li>Diffie-Hellman Key Exchange: The key exchange algorithm in order for the interacting systems to derive to the same shared key that will be used by DES for the encryption-decryption purposes.</li>
+						</ul>
+					<a href="https://github.com/MattCrook/python_sockets_multi_threading"><i class="fab fa-github"></i></a>
+				</div>
+			</section>
+		</div>
+	</section>
+
 
 	<!-- CTA -->
 	<hr />
@@ -297,19 +288,20 @@
 				changing and demanding environment, where my role touched nearly every other department in the company.
 				My responsibilities in redirection, live performance tracking, mechanical tracking, radio tracking,
 				pipeline analysis and forecasting would contribute to over $5 million dollars recovered annually.
-				In addition, I worked regularly with large data in Hadoop, utilized the underlying platform services and
-				infrastructure, wrote scripts to fetch data using various API's, and worked directly with our developers
-				to build tools, apps, and automate processes.
-				My deepening curiosity and drive to always have something new to work towards lead me to attending <a
+				In addition, I worked regularly with large data in Hadoop, later in GCP, utilized the underlying platform services and
+				infrastructure, wrote scripts to fetch data using various API's, developed extensive professional experience in data visualizations using python and Tableau, 
+				used of SQL for queries using various drivers and Power BI, and worked directly with our developers to build tools, apps, and automate processes. 
+				My deepening curiosity, ambition towards goals, and drive for to always have something new to work towards lead me to attending <a
 					href="http://nashvillesoftwareschool.com/" alt="NSS Link">Nashville Software School</a>. That
 				curiosity and drive did not stop through school, and shorty after graduating from NSS, I accepted a role
-				as a full-stack software engineer at <a href="https://www.rootnote.co/">RootNote</a> where I get to help
+				as a full-stack software engineer at <a href="https://www.rootnote.co/">RootNote</a> where I got to help
 				build many of analytical and data visualization software I once used. Continuing to learn and with the
-				drive to grow my skills and craft, I find myself where I am currently, as an SRE at <a
-					href="https://getbuilt.com/">Built
-					Technologies</a>.</p>
+				drive to grow my skills and craft, I found I had a passion and deep curiosity towards infrastructure, and I followed this path by becoming an SRE at <a
+					href="https://getbuilt.com/">Built Technologies</a>.
+				</p> Growing my skillset in both application development and infrastructure, and gaining experience working with large distributed systems, I then moved on to my current role, which is DevOps Engineer on the systems and cloud infrastructure team at <a href="https://www.shipt.com/">Shipt</a>.
 		</div>
 	</section>
+</div>
 	<hr />
 
 	<!-- Testimonials -->
@@ -317,35 +309,49 @@
 		<div class="inner">
 			<header class="special">
 				<h2>Technology</h2>
+				<h3 class="technology_h3">DevOps Tooling</h3>
+				<ul class="list-style-none">
+					<li>Terraform</li>
+					<li>Kubernetes</li>
+					<li>Helm</li>
+					<li>Istio</li>
+					<li>Docker</li>
+					<li>Docker-Compose</li>
+					<li>Git</li>
+					<li>Bash</li>
+					<li>Ngnix</li>
+					<li>Jenkins</li>
+					<li>Prometheus</li>
+					<li>Grafana</li>
+				</ul>
+				<h3 class="technology_h3">Cloud Platforms</h3>
+				<ul class="list-style-none">
+					<li>Google Cloud Platform</li>
+					<li>AWS</li>
+				</ul>
+				<h3 class="technology_h3">Application Development</h3>
 				<ul class="list-style-none">
 					<li>JavaScript</li>
 					<li>Typescript</li>
+					<li>Go</li>
 					<li>React</li>
 					<li>Python</li>
 					<li>Django</li>
 					<li>Flask</li>
 					<li>Node</li>
-					<li>Docker</li>
-					<li>Docker-Compose</li>
-					<li>Terraform</li>
-					<li>Jenkins</li>
-					<li>Helm</li>
-					<li>Ngnix</li>
-					<li>WSGI</li>
-					<li>Kubernetes</li>
 					<li>Jest</li>
 					<li>Cypress</li>
-					<li>PostgreSQL</li>
-					<li>MySQL</li>
 					<li>Selenium</li>
 					<li>OAuth2</li>
-					<li>OpenIdConnect</li>
-					<li>Git</li>
-					<li>Bash</li>
 					<li>PHP</li>
-					<li>Google Cloud Platform</li>
-					<li>AWS</li>
 				</ul>
+				<h3 class="technology_h3">Databases</h3>
+				<ul class="list-style-none">
+					<li>PostgreSQL</li>
+					<li>MySQL</li>
+					<li>Neo4j</li>
+					<li>MongoDB</li>
+					<li>Cassandra</li>
 			</header>
 		</div>
 		<hr />
@@ -353,68 +359,28 @@
 			<header class="special">
 				<h2>Tools</h2>
 				<ul class="list-style-none">
-					<li>Intern</li>
-					<li>Rundeck</li>
-					<li>Sentry</li>
 					<li>New Relic</li>
 					<li>Snyk</li>
+					<li>Codefresh.io</li>
+					<li>GoCD</li>
 					<li>JIRA</li>
+					<li>Sentry</li>
+					<li>Styra (Open Policy Agent)</li>
+					<li>OpsGenie</li>
+					<li>Rundeck</li>
+					<li>Github</li>
+					<li>Intern</li>
+					<li>Coveralls</li>
+					<li>SauceLabs</li>
 					<li>Confluence</li>
 					<li>Postman</li>
 					<li>Apache Hive and Impala</li>
 					<li>Tableau</li>
 					<li>Power BI</li>
-					<li>CMS</li>
-					<li>Hue</li>
 				</ul>
 			</header>
 		</div>
 	</section>
-	<!-- <div class="testimonials">
-				<section>
-					<div class="content">
-						<blockquote>
-							<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem
-								non mi integer non faucibus.</p>
-						</blockquote>
-						<div class="author">
-							<div class="image">
-								<img src="images/pic01.jpg" alt="" />
-							</div>
-							<p class="credit">- <strong>Jane Doe</strong> <span>CEO - ABC Inc.</span></p>
-						</div>
-					</div>
-				</section>
-				<section>
-					<div class="content">
-						<blockquote>
-							<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem
-								non mi integer non faucibus.</p>
-						</blockquote>
-						<div class="author">
-							<div class="image">
-								<img src="images/pic03.jpg" alt="" />
-							</div>
-							<p class="credit">- <strong>John Doe</strong> <span>CEO - ABC Inc.</span></p>
-						</div>
-					</div>
-				</section>
-				<section>
-					<div class="content">
-						<blockquote>
-							<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem
-								non mi integer non faucibus.</p>
-						</blockquote>
-						<div class="author">
-							<div class="image">
-								<img src="images/pic02.jpg" alt="" />
-							</div>
-							<p class="credit">- <strong>Janet Smith</strong> <span>CEO - ABC Inc.</span></p>
-						</div>
-					</div>
-				</section>
-			</div>
-		</div> -->
 	</section>
 
 	<!-- Footer -->
@@ -424,7 +390,7 @@
 				<section>
 					<h3 id="contact-anchor">Contact</h3>
 					<p>matt.crook11@gmail.com</p>
-					<img src="./images/IMG_0367.JPG" alt="" />
+					<img src="./images/SelfPic.png" alt="" id="self_pic"/>
 				</section>
 				<section>
 					<h4>Resume</h4>
