@@ -3994,11 +3994,13 @@ img#blog_image {
 
 .decrypt_label {
   padding-bottom: 1rem;
+  font-size: 14px;
 }
 
 .decrypt_ul {
   text-align: left;
   margin-left: 11%;
+  font-size: 14px;
 }
 
 .technology_h3 {
