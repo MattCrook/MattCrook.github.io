@@ -96,11 +96,11 @@
 				<section class="spotlight_card">
 					<div class="content">
 						<header>
-							<img src="./images/Quantum.png" class="portfolio-pic" alt="">
+							<img src="./images/Quantum.png" class="portfolio-pic" id="quantum_pic" alt="">
 
 						<h3>Quantum Coasters</h3>
 						</header>
-						<p>As a roller coaster enthusiast, this project exemplifies my <strong>fullstack</strong> skills as a engineer. My goal
+						<p class="card_desc">As a roller coaster enthusiast, this project exemplifies my <strong>fullstack</strong> skills as a engineer. My goal
 							was to build a platform and one-stop shop for roller
 							coaster fans and other enthusiasts to track their coaster <a
 								href="https://coasterbuzz.com/Forums/Topic/what-exactly-counts-as--a-credit">credits</a>, as well as provide many other options and services.
@@ -112,7 +112,7 @@
 							integrated calendar, read the latest theme park news by accessing the Quantum News, and
 							message/ chat with other users either in a public forum, group chat, or private message.</p>
 
-						<p>Quantum Coasters is a <strong>miro-services architected</strong> application with a React
+						<p class="card_desc">Quantum Coasters is a <strong>miro-services architected</strong> application with a React
 							Client, Django full-stack application, third party Authentication and Management API, and
 							Django RESTful API. <a href="https://auth0.com/">Auth0</a> is used for authentication and
 							authorization,
@@ -132,15 +132,15 @@
 							<img src="./images/GKE.jpg" class="portfolio-pic" alt="">
 							<h3>Google Kubernetes Engine Infrastructure</h3>
 						</header>
-						<p>This project encompasses many different GCP components, including provisioning a fully customized GKE cluster with Terraform, along with any other resources that might be needed, 
+						<p class="card_desc">This project encompasses many different GCP components, including provisioning a fully customized GKE cluster with Terraform, along with any other resources that might be needed, 
 							including a VPC, subnets, NAT Gateway, Firewalls, IAM roles and permissions, CloudSQL instances, as well as many other GCP resources, including Compute resources.
 						</p>
-						<p>Along with provisioning the infrastructure with Terraform using the Terraform modules, this project also houses the Kubernetes manifests to deploy any application to the provisioned infrastructure. 
+						<p class="card_desc">Along with provisioning the infrastructure with Terraform using the Terraform modules, this project also houses the Kubernetes manifests to deploy any application to the provisioned infrastructure. 
 							This can be done either using the Kubernetes manifests themselves, or with Helm. 
 						</p>
-						<p>For demo purposes, there are also various simple applications to use, to deploy to the GKE cluster. These applications include a <a href="https://github.com/MattCrook/gke-cluster/tree/master/app/django">Django</a> app, a <a href="https://github.com/MattCrook/gke-cluster/tree/master/app/flask">Flask</a> app and API, an <a href="https://github.com/MattCrook/gke-cluster/tree/master/app/node">Express</a> app, and a <a href="https://github.com/MattCrook/gke-cluster/tree/master/app/go">Go</a> app and API.
+						<p class="card_desc">For demo purposes, there are also various simple applications to use, to deploy to the GKE cluster. These applications include a <a href="https://github.com/MattCrook/gke-cluster/tree/master/app/django">Django</a> app, a <a href="https://github.com/MattCrook/gke-cluster/tree/master/app/flask">Flask</a> app and API, an <a href="https://github.com/MattCrook/gke-cluster/tree/master/app/node">Express</a> app, and a <a href="https://github.com/MattCrook/gke-cluster/tree/master/app/go">Go</a> app and API.
 						</p>
-						<p>To view project repository, and for project setup and instructions, please follow the link below.</p>
+						<p class="card_desc">To view project repository, and for project setup and instructions, please follow the link below.</p>
 						<a href="https://github.com/MattCrook/gke-cluster"><i class="fab fa-github"></i></a>
 					</div>
 				</section>
@@ -151,15 +151,15 @@
 							<img src="./images/EKS-2.png" class="portfolio-pic" id="eks">
 							<h3>AWS Elastic Kubernetes Cluster</h3>
 						</header>
-						<p>This project provides the necessary infrastructure and resources in AWS to provision an EKS cluster with corresponding networking and IAM roles and permissions.
+						<p class="card_desc">This project provides the necessary infrastructure and resources in AWS to provision an EKS cluster with corresponding networking and IAM roles and permissions.
 						</p>
-						<p>Along with an EKS cluster, this project also houses modules to provision other AWS resources such as RDS instances, 
+						<p class="card_desc">Along with an EKS cluster, this project also houses modules to provision other AWS resources such as RDS instances, 
 							in-memory store with Elasticache, customized networking with VPC and corresponding Public and Private Subnets, 
 							Route Tables, Internet Gateway, NAT Gateway, ElasticIP, and relevant associations, 
 							as well as cloud object storage using S3 buckets, and DynamoDB for NoSQL object storage, 
 							for example for Terraform state locking.</p>
-						<p>Along with the provisioned infrastructure, this project also houses Kubernetes manifests to deploy applications to the cluster. Examples of both the <a href="https://github.com/MattCrook/eks-cluster/tree/master/eks/live/dev/services/app/Kubernetes">Kubernetes</a> manifests themselves, and using <a href="https://github.com/MattCrook/eks-cluster/tree/master/eks/live/dev/services/app/charts/eks-cluster-dev">Helm</a> can be used.</p>
-						<p>This project also houses a small demo Node.js/ Express application for demo purposes. This can be used to build a Docker image and to deployed to a Kubernetes cluster.</p>
+						<p class="card_desc">Along with the provisioned infrastructure, this project also houses Kubernetes manifests to deploy applications to the cluster. Examples of both the <a href="https://github.com/MattCrook/eks-cluster/tree/master/eks/live/dev/services/app/Kubernetes">Kubernetes</a> manifests themselves, and using <a href="https://github.com/MattCrook/eks-cluster/tree/master/eks/live/dev/services/app/charts/eks-cluster-dev">Helm</a> can be used.</p>
+						<p class="card_desc">This project also houses a small demo Node.js/ Express application for demo purposes. This can be used to build a Docker image and to deployed to a Kubernetes cluster.</p>
 						<a href="https://github.com/MattCrook/kubernetes_examples"><i
 								class="fab fa-github"></i></a>
 					</div>
@@ -178,7 +178,7 @@
 						<img src="./images/AWS-Docker.png" class="portfolio-pic" alt="">
 							<h3>EC2 Running Containerized Application</h3>
 						</header>
-					<p>This project creates an EC2 instance in AWS running a basic web application in Docker using a single command from the user. Before the script is run, there is no EC2 instances running and afterward the script should output the address of your working web application. The single command from the user can (and likely will) call a longer shell script, or other configuration management code. Part of the challenge is to have restricted access, so you can not use to EKS, ECS, S3, ELB, ASG, or Route53.
+					<p class="card_desc">This project creates an EC2 instance in AWS running a basic web application in Docker using a single command from the user. Before the script is run, there is no EC2 instances running and afterward the script should output the address of your working web application. The single command from the user can (and likely will) call a longer shell script, or other configuration management code. Part of the challenge is to have restricted access, so you can not use to EKS, ECS, S3, ELB, ASG, or Route53.
 						For a more detailed ReadMe, click the Github link below!
 					</p>
 					<a href="https://github.com/MattCrook/ec2-running-docker-container"><i class="fab fa-github"></i></a>
@@ -190,7 +190,7 @@
 						<img src="./images/Kubernetes.png" class="portfolio-pic">
 						<h3>Kubernetes Examples</h3>
 					</header>
-					<p>Collection of example Kubernetes config files for various resources, services, and components. 
+					<p class="card_desc">Collection of example Kubernetes config files for various resources, services, and components. 
 						Many of which, have deployable example apps which can be viewed in the browser by following the instructions on the ReadMe.
 					</p>
 					<a href="https://github.com/MattCrook/kubernetes_examples"><i
@@ -203,7 +203,7 @@
 						<img src="./images/Terraform-main.jpg" class="portfolio-pic">
 						<h3>Terraform - Examples and Projects</h3>
 					</header>
-					<p>This repository consists of a collection of Terraform examples and projects provisioning different types and resources of infrastructure. 
+					<p class="card_desc">This repository consists of a collection of Terraform examples and projects provisioning different types and resources of infrastructure. 
 						The projects utilize both GCP, and AWS as cloud providers, and consist of both unique projects and examples, 
 						as well as the same projects, but transposed between the two different providers.
 					</p>
@@ -221,7 +221,7 @@
 						<img src="./images/ip-spoofing-t.jpg" class="portfolio-pic">
 						<h3>Finding Given IP Address in Subnetwork</h3>
 					</header>
-					<p> For a description of CIDR notation, and how to find the upper and lower IP range from a
+					<p class="card_desc"> For a description of CIDR notation, and how to find the upper and lower IP range from a
 						given CIDR, see <a
 							href="https://github.com/MattCrook/CIDR-python-script/blob/main/docs/CIDR.md">Subnetting
 							in CIDR Notation</a>. This script can be run as a <strong>Command Line</strong> program,
@@ -233,7 +233,7 @@
 							href="https://stat.ripe.net/data/country-resource-list/data.json?resource=US&v4_format=prefix">official
 							subnetworks</a>. Then, if desired, return the upper and lower ends of the range (Network
 						ID and Broadcast ID).</p>
-					<p>For more in depth description of the functions used in the logic, and the functionality
+					<p class="card_desc">For more in depth description of the functions used in the logic, and the functionality
 						behind them, see <a
 							href="https://github.com/MattCrook/CIDR-python-script/blob/main/docs/Functions.md">here</a>.
 					</p>
@@ -246,7 +246,7 @@
 						<img src="./images/cryptography-blog-img.png" class="portfolio-pic">
 						<h3>Python Sockets and Multi Threading</h3>
 					</header>
-					<p>This is a personal project and fun experiment that was inspired by a YouTube video I
+					<p class="card_desc">This is a personal project and fun experiment that was inspired by a YouTube video I
 						watched on multi-threading in Python. I decided to take the idea and run with it, creating
 						this small command line project. This program will allow anyone running it to chat with
 						other users on the same local IP address, also running the program on the command line. It
@@ -261,9 +261,9 @@
 						<img src="./images/free-encryption.jpg" class="portfolio-pic">
 						<h3>Encryption and Decryption</h3>
 					</header>
-					<p>Repository includes examples of CLI programs implementing encryption-decryption procedures of messages using a client-server architecture.
+					<p class="card_desc">Repository includes examples of CLI programs implementing encryption-decryption procedures of messages using a client-server architecture.
 					</p>
-					<p>The CLI programs can be run in the terminal, and demonstrates encrypted messages being sent between a client and a server, and vice versa. This can also be run on different hosts on the same LAN (Local Area Network), simulating sending encrypted instant messages.</p>
+					<p class="card_desc">The CLI programs can be run in the terminal, and demonstrates encrypted messages being sent between a client and a server, and vice versa. This can also be run on different hosts on the same LAN (Local Area Network), simulating sending encrypted instant messages.</p>
 					<div class="decrypt_label">The algorithms used are:
 					</div>
 						<ul class="decrypt_ul">

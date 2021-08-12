@@ -954,6 +954,14 @@ table.alt tbody tr td {
   display: -ms-flex;
   display: flex;
   justify-content: space-evenly;
+  -moz-align-items: -moz-stretch;
+  -webkit-align-items: -webkit-stretch;
+  -ms-align-items: -ms-stretch;
+  align-items: stretch;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 
 }
 .highlights > * {
@@ -968,7 +976,8 @@ table.alt tbody tr td {
 }
 .highlights > * {
   /* width: 33.3333333333%; */
-  width: 29%;
+  width: 28%;
+  /* padding: 1.5rem; */
 
 }
 /* .highlights > * {
@@ -989,7 +998,8 @@ table.alt tbody tr td {
 }
 .highlights > :nth-child(3n + 1),
 .highlights > :nth-child(3n) {
-  width: 29%;
+  width: 28%;
+  /* width: 29%; */
   /* width: calc(33.3333333333% + -0.5rem); */
 }
 .highlights .content {
@@ -1010,7 +1020,7 @@ table.alt tbody tr td {
   }
   .highlights > * {
     /* padding: 1rem; */
-    width: 29%;
+    width: 28%;
     /* width: calc(33.3333333333% + 0.6666666667rem); */
   }
   .highlights > :nth-child(-n + 3) {
@@ -2522,7 +2532,7 @@ ul.icons li .icon:before {
 /* Wrapper */
 
 #wrapper_spotlights {
-  margin: 0;
+  margin: 2rem;
 }
 
 #wrapper_spotlights_last {
@@ -3314,6 +3324,7 @@ body.is-preload #banner:before {
 #footer .content section:first-child {
   width: 50%;
   padding-right: 4rem;
+  height: 21rem;
 }
 #footer .content section:last-child {
   padding-left: 4rem;
@@ -3914,6 +3925,7 @@ body.is-menu-visible #menu {
 
 .portfolio-pic {
   width: 92%;
+  object-fit: contain;
   /* height: 110%; */
 }
 
@@ -3976,7 +3988,8 @@ img#blog_image {
 }
 
 #eks {
-  width: 85%;
+  width: 90%;
+  object-fit: scale-down;
 }
 
 .decrypt_label {
@@ -3994,5 +4007,13 @@ img#blog_image {
 
 #self_pic {
   object-fit: cover;
-  height: 39%;
+  height: 12rem;
+}
+
+.card_desc {
+  font-size: 14px;
+}
+
+#quantum_pic {
+  width: 100%;
 }
