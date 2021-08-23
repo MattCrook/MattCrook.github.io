@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Blog</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+      <a class="logo" href="../index.html">Home</a>
+      <a class="logo" href="../aboutMe.html">About</a>
+      <a class="logo" href="../blog.html">Blog</a>
+      <a class="logo" href="#contact-anchor">Contact</a>
+    </header>
+
+    <!-- Nav -->
+
+    <!-- Heading -->
+    <div id="heading">
+      <h1>Terraform Locals vs Variables</h1>
+    </div>
+
+    <!-- Main -->
+    <section id="main" class="wrapper">
+      <div class="inner">
+        <div class="content">
+          <!-- <h3>Coming Soon!</h3> -->
+          <h3>What Is A Local?</h3>
+          <p>
+            As previously stated, <strong>Terraform Locals</strong> are named
+            values that you can refer to in your configuration. You can use
+            local values to simplify your Terraform configuration and avoid
+            repetition. It is important to note, that unlike variables found in
+            programming languages, Terraform's locals don't change values during
+            or between Terraform runs such as plan, apply, or destroy. For this
+            reason, you can use locals to give a name to the result of any
+            Terraform expression, and re-use that name throughout your
+            configuration.
+          </p>
+          <h3>What Is A Variable?</h3>
+          <p>
+            The official definition of a Terraform Input Variable is that they
+            serve as parameters for a Terraform module, allowing aspects of the
+            module to be customized without altering the module's own source
+            code, and allowing modules to be shared between different
+            configurations. If you are familiar with traditional programming
+            languages, these variables can be thought of as being like function
+            arguments.
+          </p>
+          <p>
+            Being like function arguments rather than being like traditional
+            variables in any programming language is an important distinction.
+            As these values will be <em>"injected"</em> (my words) into your
+            Terraform, where that value is used. To picture that, and using the
+            traditional programming language school of thought, you can think of
+            where you are using the variable (like in a module, resource,
+            etc...) as the <em>"parameter"</em> and the terraform variable as
+            the <em>"argument"</em> that fills the parameter of your function.
+          </p>
+          <p>
+            When you declare variables in the root module of your configuration,
+            you can set their values using CLI options, environment variables,
+            or the Terraform configuration. When you declare them in child
+            modules, the calling module should pass values in the module block.
+            This means, that variable name and value in child module, will be
+            passed to the parent module, where that value will fill a variable
+            with the corresponding name, with the value passed from the child
+            module.
+          </p>
+          <div id="one_line_h3">
+            <div style="text-transform: uppercase; margin-right: 8px">
+              Local
+            </div>
+            <div class="vs">vs</div>
+            <div style="text-transform: uppercase">Variable</div>
+          </div>
+          <p>
+              The most basic way to think about this, going to back to the
+              traditional programming language metaphor, is local values are like a
+              function's temporary local variables. For example, like saving off the
+              value of something, say the result of a return value of another function,
+              into a variable, to use it later in your current function.
+          </p>
+          <p>
+            As previously stated, Terraform's locals don't change values during
+            or between Terraform runs such as plan, apply, or destroy. To add,
+            <strong
+              >unlike input variables, locals are not set directly by users of
+              your configuration</strong
+            >. So, because of this behavior, you can use locals to give a name
+            to the result of any Terraform expression, and re-use that name
+            throughout your configuration. by saving the value of an expression
+            into a local, you have essentially "saved off" the return value of
+            something else, for which unless that local is manually overridden
+            or changed later or further down in the Terraform config, you
+            will have whatever value that local is holding for the rest of the
+            Terraform configuration.
+          </p>
+
+          <div class="sub_h3">When To Use</div>
+          Use local values only in moderation, in situations where a single
+          value or result is used in many places and that value is likely to be
+          changed in future. The ability to easily change the value in a central
+          place is the key advantage of local values.
+
+          <div class="date_blog_written">
+            <em><p>Written August 23, 2021</p></em>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="blog_footer_container">
+      <div class="inner">
+        <div id="contact-anchor" class="contact_blog">
+          <a href="mailTo:matt.crook11@gmail.com"
+            ><i class="fas fa-envelope">&nbsp;</i></a
+          >
+          <a href="https://twitter.com/mgcrook"
+            ><i class="fab fa-twitter-square">&nbsp;</i></a
+          >
+          <a href="https://www.facebook.com/matt.crook.18"
+            ><i class="fab fa-facebook">&nbsp;</i></a
+          >
+          <a href="https://www.linkedin.com/in/mattcrook11/"
+            ><i class="fab fa-linkedin">&nbsp;</i></a
+          >
+          <a href="https://github.com/MattCrook"
+            ><i class="fab fa-github">&nbsp;</i></a
+          >
+        </div>
+
+        <div class="copyright">
+          &copy; Matt Crook. Photos <a href="https://unsplash.co">Unsplash</a>,
+          Video <a href="https://coverr.co">Cover</a>.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
